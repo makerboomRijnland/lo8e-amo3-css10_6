@@ -6,18 +6,26 @@ $light-colors: (
     "green": #00FF00
 );
 
+$light-durations: (
+    "red": 1.0s,
+    "yellow": 0.8s,
+    "blue": 1.1s,
+    "pink": 0.9s,
+    "green": 1.2s
+);
+
 body {
     background-color: #000000;
     color: white;
 }
 
 ul.line {
-    
     margin: 0;
     padding: 0;
     text-align: center;
 
     li {
+        animation: kerstlicht 1s infinite;
         display: inline-block;
         width: 10px;
         height: 20px;
@@ -29,5 +37,33 @@ ul.line {
                 background-color: $color;
             }
         }
+
+        @each $label, $duration in $light-durations {
+            &.#{$label} {
+                animation-duration: $duration;
+            }
+        }
+
+        @for $i from 1 to 24 {
+            &:nth-child(#{$i}n) {
+                animation-duration: 0.75s + (random() * 0.5);
+            }
+            
+        }
+        
+    }
+}
+
+@keyframes kerstlicht {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

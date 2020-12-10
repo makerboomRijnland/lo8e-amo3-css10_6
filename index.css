@@ -9,6 +9,7 @@ ul.line {
   text-align: center;
 }
 ul.line li {
+  animation: kerstlicht 1s infinite;
   display: inline-block;
   width: 10px;
   height: 20px;
@@ -29,6 +30,102 @@ ul.line li.pink {
 }
 ul.line li.green {
   background-color: #00FF00;
+}
+ul.line li.red {
+  animation-duration: 1s;
+}
+ul.line li.yellow {
+  animation-duration: 0.8s;
+}
+ul.line li.blue {
+  animation-duration: 1.1s;
+}
+ul.line li.pink {
+  animation-duration: 0.9s;
+}
+ul.line li.green {
+  animation-duration: 1.2s;
+}
+ul.line li:nth-child(1n) {
+  animation-duration: 1.1201579305s;
+}
+ul.line li:nth-child(2n) {
+  animation-duration: 1.244212841s;
+}
+ul.line li:nth-child(3n) {
+  animation-duration: 0.9370649758s;
+}
+ul.line li:nth-child(4n) {
+  animation-duration: 0.7587700306s;
+}
+ul.line li:nth-child(5n) {
+  animation-duration: 1.1576890396s;
+}
+ul.line li:nth-child(6n) {
+  animation-duration: 0.8284938496s;
+}
+ul.line li:nth-child(7n) {
+  animation-duration: 1.2259404314s;
+}
+ul.line li:nth-child(8n) {
+  animation-duration: 1.151836863s;
+}
+ul.line li:nth-child(9n) {
+  animation-duration: 0.9589720455s;
+}
+ul.line li:nth-child(10n) {
+  animation-duration: 1.1481959085s;
+}
+ul.line li:nth-child(11n) {
+  animation-duration: 1.1089533721s;
+}
+ul.line li:nth-child(12n) {
+  animation-duration: 0.9523604559s;
+}
+ul.line li:nth-child(13n) {
+  animation-duration: 0.9122171947s;
+}
+ul.line li:nth-child(14n) {
+  animation-duration: 1.1339448544s;
+}
+ul.line li:nth-child(15n) {
+  animation-duration: 1.0433318761s;
+}
+ul.line li:nth-child(16n) {
+  animation-duration: 1.0160410048s;
+}
+ul.line li:nth-child(17n) {
+  animation-duration: 1.1286574555s;
+}
+ul.line li:nth-child(18n) {
+  animation-duration: 1.2222429864s;
+}
+ul.line li:nth-child(19n) {
+  animation-duration: 0.8802305233s;
+}
+ul.line li:nth-child(20n) {
+  animation-duration: 0.7557522174s;
+}
+ul.line li:nth-child(21n) {
+  animation-duration: 1.0225454693s;
+}
+ul.line li:nth-child(22n) {
+  animation-duration: 1.2245680809s;
+}
+ul.line li:nth-child(23n) {
+  animation-duration: 1.2110219262s;
+}
+
+@keyframes kerstlicht {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
