@@ -10,11 +10,36 @@ ul.line {
 }
 ul.line li {
   animation: kerstlicht 1s infinite;
+  position: relative;
+  margin: 0 15px;
+  list-style: none;
+  padding: 0;
   display: inline-block;
+  width: 12px;
+  height: 28px;
+  border-radius: 50%;
+  top: 35px;
+  background: #fff;
+}
+ul.line li:before {
+  content: "";
+  position: absolute;
+  background: #222;
   width: 10px;
-  height: 20px;
-  border-radius: 15px;
-  margin: 0 10px;
+  height: 9px;
+  border-radius: 3px;
+  top: -4px;
+  left: 1px;
+}
+ul.line li:after {
+  content: "";
+  top: -14px;
+  left: 9px;
+  position: absolute;
+  width: 52px;
+  height: 19px;
+  border-bottom: solid #222 2px;
+  border-radius: 30%;
 }
 ul.line li.red {
   background-color: #FF0000;
@@ -47,73 +72,73 @@ ul.line li.green {
   animation-duration: 1.2s;
 }
 ul.line li:nth-child(1n) {
-  animation-duration: 1.1201579305s;
+  animation-duration: 1.0892641787s;
 }
 ul.line li:nth-child(2n) {
-  animation-duration: 1.244212841s;
+  animation-duration: 1.1867002092s;
 }
 ul.line li:nth-child(3n) {
-  animation-duration: 0.9370649758s;
+  animation-duration: 1.1885344451s;
 }
 ul.line li:nth-child(4n) {
-  animation-duration: 0.7587700306s;
+  animation-duration: 1.2231406797s;
 }
 ul.line li:nth-child(5n) {
-  animation-duration: 1.1576890396s;
+  animation-duration: 0.8877881245s;
 }
 ul.line li:nth-child(6n) {
-  animation-duration: 0.8284938496s;
+  animation-duration: 0.8267007009s;
 }
 ul.line li:nth-child(7n) {
-  animation-duration: 1.2259404314s;
+  animation-duration: 1.0263250025s;
 }
 ul.line li:nth-child(8n) {
-  animation-duration: 1.151836863s;
+  animation-duration: 0.8158584851s;
 }
 ul.line li:nth-child(9n) {
-  animation-duration: 0.9589720455s;
+  animation-duration: 1.0330739167s;
 }
 ul.line li:nth-child(10n) {
-  animation-duration: 1.1481959085s;
+  animation-duration: 1.211489993s;
 }
 ul.line li:nth-child(11n) {
-  animation-duration: 1.1089533721s;
+  animation-duration: 0.993323344s;
 }
 ul.line li:nth-child(12n) {
-  animation-duration: 0.9523604559s;
+  animation-duration: 0.7766777498s;
 }
 ul.line li:nth-child(13n) {
-  animation-duration: 0.9122171947s;
+  animation-duration: 0.9236318001s;
 }
 ul.line li:nth-child(14n) {
-  animation-duration: 1.1339448544s;
+  animation-duration: 1.2104664256s;
 }
 ul.line li:nth-child(15n) {
-  animation-duration: 1.0433318761s;
+  animation-duration: 1.1615573671s;
 }
 ul.line li:nth-child(16n) {
-  animation-duration: 1.0160410048s;
+  animation-duration: 1.1099898346s;
 }
 ul.line li:nth-child(17n) {
-  animation-duration: 1.1286574555s;
+  animation-duration: 1.1853652723s;
 }
 ul.line li:nth-child(18n) {
-  animation-duration: 1.2222429864s;
+  animation-duration: 1.2141426842s;
 }
 ul.line li:nth-child(19n) {
-  animation-duration: 0.8802305233s;
+  animation-duration: 1.0960744731s;
 }
 ul.line li:nth-child(20n) {
-  animation-duration: 0.7557522174s;
+  animation-duration: 0.7516119999s;
 }
 ul.line li:nth-child(21n) {
-  animation-duration: 1.0225454693s;
+  animation-duration: 0.93293991s;
 }
 ul.line li:nth-child(22n) {
-  animation-duration: 1.2245680809s;
+  animation-duration: 1.0838422689s;
 }
 ul.line li:nth-child(23n) {
-  animation-duration: 1.2110219262s;
+  animation-duration: 0.8721855027s;
 }
 
 @keyframes kerstlicht {
