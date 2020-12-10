@@ -18,11 +18,11 @@ ul.line li {
 ul.line li.red {
   background-color: #FF0000;
 }
-ul.line li.blue {
-  background-color: #0000FF;
-}
 ul.line li.yellow {
   background-color: #FFFF00;
+}
+ul.line li.blue {
+  background-color: #0000FF;
 }
 ul.line li.pink {
   background-color: #FF00FF;

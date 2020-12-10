@@ -1,8 +1,10 @@
-$red: #FF0000;
-$yellow: #FFFF00;
-$blue: #0000FF;
-$pink: #FF00FF;
-$green: #00FF00;
+$light-colors: (
+    "red": #FF0000,
+    "yellow": #FFFF00,
+    "blue": #0000FF,
+    "pink": #FF00FF,
+    "green": #00FF00
+);
 
 body {
     background-color: #000000;
@@ -22,24 +24,10 @@ ul.line {
         border-radius: 15px;
         margin: 0 10px;
 
-        &.red {
-            background-color: $red;
-        }
-
-        &.blue {
-            background-color: $blue;
-        }
-
-        &.yellow {
-            background-color: $yellow;
-        }
-
-        &.pink {
-            background-color: $pink;
-        }
-
-        &.green {
-            background-color: $green;
+        @each $label, $color in $light-colors {
+            &.#{$label} {
+                background-color: $color;
+            }
         }
     }
 }
